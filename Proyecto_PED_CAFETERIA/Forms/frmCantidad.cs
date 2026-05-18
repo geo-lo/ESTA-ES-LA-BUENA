@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace Proyecto_PED_CAFETERIA.Forms
         double precioProducto;
         string DescripcionProducto;
         public int idProducto;
+        public string rutaImagenSeleccionada;
 
         public frmCantidad()
         {
@@ -39,7 +41,20 @@ namespace Proyecto_PED_CAFETERIA.Forms
         // su descripción y se configura el estilo del texto
         private void frmCantidad_Load(object sender, EventArgs e)
         {
+            string rutaImagen = Path.Combine(
+              Application.StartupPath,
+                             "Imagenes",
+                             $"{idProducto}.png"
+                                              );
+
+            if (File.Exists(rutaImagen))
+            {
+                imagen.Image = Image.FromFile(rutaImagen);
+
+                imagen.SizeMode = PictureBoxSizeMode.Zoom;
+            }
             AplicarEstiloBonito();
+           
 
             lblPre.Text = "Precio: $" + precioProducto.ToString("0.00");
             lblPre.Font = new Font("Segoe UI", 11, FontStyle.Bold);
@@ -145,7 +160,7 @@ namespace Proyecto_PED_CAFETERIA.Forms
 
             int cantidad = (int)numericUpDown1.Value;
             // DESPUÉS
-            Producto prod = new Producto(nombreProducto, idProducto, cantidad, precioProducto, btnAceptar, "Categoria", DescripcionProducto);
+            Producto prod = new Producto(nombreProducto, idProducto, cantidad, precioProducto, btnAceptar, "Categoria", DescripcionProducto, rutaImagenSeleccionada);
 
             ClaseGlobal.listaTemporal.AgregarProducto(prod);
 

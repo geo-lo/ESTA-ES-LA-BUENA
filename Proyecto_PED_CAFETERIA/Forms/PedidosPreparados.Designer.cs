@@ -36,7 +36,7 @@
             // dgvPreparados
             // 
             this.dgvPreparados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPreparados.Location = new System.Drawing.Point(11, 96);
+            this.dgvPreparados.Location = new System.Drawing.Point(25, 91);
             this.dgvPreparados.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPreparados.Name = "dgvPreparados";
             this.dgvPreparados.RowHeadersWidth = 51;
@@ -54,6 +54,7 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // PedidosPreparados
             // 
@@ -62,8 +63,8 @@
             this.ClientSize = new System.Drawing.Size(784, 411);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvPreparados);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PedidosPreparados";
-            this.Text = "PedidosPreparados";
             this.Load += new System.EventHandler(this.PedidosPreparados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPreparados)).EndInit();
             this.ResumeLayout(false);

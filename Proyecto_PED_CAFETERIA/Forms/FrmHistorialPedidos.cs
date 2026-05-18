@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -125,6 +126,13 @@ namespace Proyecto_PED_CAFETERIA.Forms
             {
                 col.Frozen = false;
             }
+
+            // TITULO
+            label2.Text = "PARA PREPARAR. ";
+            label2.Font = new Font("Segoe UI", 16, FontStyle.Bold);
+            label2.ForeColor = Color.FromArgb(92, 64, 51);
+            label2.BackColor = Color.Transparent;
+            label2.AutoSize = true;
             // ELIMINAR EL GRIS FEO Y CONFIGURAR FONDO
             dataHistorial.BackgroundColor = Color.FromArgb(250, 244, 236);
             dataHistorial.BorderStyle = BorderStyle.None;

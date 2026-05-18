@@ -40,6 +40,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.preview = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.preview)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPrecio
@@ -156,11 +159,31 @@
             this.label5.TabIndex = 22;
             this.label5.Text = "Descripcion:";
             // 
+            // preview
+            // 
+            this.preview.Location = new System.Drawing.Point(282, 10);
+            this.preview.Name = "preview";
+            this.preview.Size = new System.Drawing.Size(158, 138);
+            this.preview.TabIndex = 23;
+            this.preview.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(307, 176);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 42);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Subir imagen";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmModificarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(643, 368);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.preview);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.label1);
@@ -179,6 +202,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmModificarProducto";
             this.Load += new System.EventHandler(this.frmModificarProducto_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.preview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,5 +221,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox preview;
+        private System.Windows.Forms.Button button1;
     }
 }

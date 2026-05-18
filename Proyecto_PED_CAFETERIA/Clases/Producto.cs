@@ -17,17 +17,19 @@ namespace CAFETERIA.ClasesNuevas
         public Button Boton { get; set; }
         public string Categoria { get; set; }
         public string Descripcion { get; set; }
+        public string RutaImagen { get; set; }
 
         public double Total
         {
             get { return Cantidad * Precio; }
         }
 
-        public Producto(string nombreProducto, int id, int cantidad, double precio, Button boton, string categoria, string descripcion)
+        public Producto(string nombreProducto, int id, int cantidad, double precio, Button boton, string categoria, string descripcion, string rutaImagen)
         {
             NombreProducto = nombreProducto;
             Id = id;
             Cantidad = cantidad;
+            RutaImagen = rutaImagen;
             Precio = precio;
             Boton = boton;
             Categoria = categoria;

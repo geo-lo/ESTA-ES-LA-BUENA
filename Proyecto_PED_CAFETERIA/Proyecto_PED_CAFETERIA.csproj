@@ -717,5 +717,6 @@
   <ItemGroup>
     <None Include="Resources\Diseño sin título1.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -34,6 +34,7 @@
             this.t = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnPreparar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorial)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +46,8 @@
             this.c,
             this.p,
             this.t});
-            this.dgvHistorial.Location = new System.Drawing.Point(25, 58);
+            this.dgvHistorial.Location = new System.Drawing.Point(25, 91);
+            this.dgvHistorial.Margin = new System.Windows.Forms.Padding(2);
             this.dgvHistorial.Name = "dgvHistorial";
             this.dgvHistorial.ReadOnly = true;
             this.dgvHistorial.RowHeadersWidth = 51;
@@ -82,7 +84,7 @@
             this.btnPreparar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPreparar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPreparar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnPreparar.Location = new System.Drawing.Point(134, 333);
+            this.btnPreparar.Location = new System.Drawing.Point(134, 346);
             this.btnPreparar.Name = "btnPreparar";
             this.btnPreparar.Size = new System.Drawing.Size(75, 23);
             this.btnPreparar.TabIndex = 1;
@@ -95,7 +97,7 @@
             this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrar.ForeColor = System.Drawing.Color.Red;
-            this.btnBorrar.Location = new System.Drawing.Point(25, 333);
+            this.btnBorrar.Location = new System.Drawing.Point(25, 346);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(75, 23);
             this.btnBorrar.TabIndex = 2;
@@ -103,11 +105,22 @@
             this.btnBorrar.UseVisualStyleBackColor = true;
             this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(101, 32);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "label2";
+            // 
             // FrmHistorialPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnPreparar);
             this.Controls.Add(this.dgvHistorial);
@@ -117,6 +130,7 @@
             this.Load += new System.EventHandler(this.FrmHistorialPedidos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorial)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -128,5 +142,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn c;
         private System.Windows.Forms.DataGridViewTextBoxColumn p;
         private System.Windows.Forms.DataGridViewTextBoxColumn t;
+        private System.Windows.Forms.Label label2;
     }
 }

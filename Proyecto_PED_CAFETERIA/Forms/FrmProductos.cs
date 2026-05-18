@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -69,13 +70,43 @@ namespace Proyecto_PED_CAFETERIA.Forms
                 }
 
                 Button btn = new Button();
-                btn.Text = $"{p.NombreProducto}\n${p.Precio:F2}";
+
                 btn.Tag = p.Id;
                 btn.Size = new Size(anchoBtn, altoBtn);
+
                 btn.FlatStyle = FlatStyle.Flat;
+                btn.FlatAppearance.BorderSize = 0;
                 btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 224, 192);
+
+                btn.BackColor = Color.White;
                 btn.ForeColor = Color.FromArgb(70, 40, 10);
+
                 btn.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+
+                string rutaImagen = Path.Combine(
+                    Application.StartupPath,
+                    "Imagenes",
+                    $"{p.Id}.png"
+                );
+
+                if (File.Exists(rutaImagen))
+                {
+                    Image img = Image.FromFile(rutaImagen);
+
+                    btn.Image = new Bitmap(img,btn.Size);
+
+                    btn.ImageAlign = ContentAlignment.TopCenter;
+                    
+                    
+                    btn.Padding = new Padding(5);
+                }
+                else
+                {
+                    // SI NO HAY IMAGEN
+                    btn.Text = $"{p.NombreProducto}\n${p.Precio:F2}";
+                }
+
+              
 
                 int fila = i / columnas;
                 int columna = i % columnas;
@@ -116,8 +147,9 @@ namespace Proyecto_PED_CAFETERIA.Forms
                 double p         = Convert.ToDouble(fila["PrecioUnitario"]);
                 string categoria = tabla.Columns.Contains("Categoria")   ? fila["Categoria"].ToString()   : "";
                 string desc      = tabla.Columns.Contains("Descripcion") ? fila["Descripcion"].ToString() : "";
+                string imagen = tabla.Columns.Contains("Imagen") ? fila["Imagen"].ToString() : "";
 
-                Producto prod = new Producto(nombre, id, 1, p, null, categoria, desc);
+                Producto prod = new Producto(nombre, id, 1, p, null, categoria, desc, imagen);
                 lista.AgregarProducto(prod);
             }
 

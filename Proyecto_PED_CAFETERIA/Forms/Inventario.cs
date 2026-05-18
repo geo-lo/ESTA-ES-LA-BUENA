@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -54,6 +55,8 @@ namespace Proyecto_PED_CAFETERIA.Forms
             dgvInventario.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvInventario.MultiSelect = false;
             dgvInventario.ReadOnly = true;
+
+
 
             dgvInventario.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(120, 72, 40);
             dgvInventario.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
@@ -176,10 +179,9 @@ namespace Proyecto_PED_CAFETERIA.Forms
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            
             ConsultasDB repo = new ConsultasDB();
 
-            if (int.TryParse(txtId.Text, out int id) == false)
+            if (!int.TryParse(txtId.Text, out int id))
             {
                 MessageBox.Show("Por favor, ingrese un ID válido.");
                 return;
@@ -191,9 +193,34 @@ namespace Proyecto_PED_CAFETERIA.Forms
                 return;
             }
 
+            //Borrar producto de la BD
             repo.EliminarProducto(id);
+
+            // Borrar imagen de la carpeta
+            string carpeta = Path.Combine(Application.StartupPath, "Imagenes");
+
+            if (Directory.Exists(carpeta))
+            {
+                // buscar cualquier extensión posible
+                string[] extensiones = { ".png", ".jpg", ".jpeg", ".bmp" };
+
+                foreach (string ext in extensiones)
+                {
+                    string ruta = Path.Combine(carpeta, id + ext);
+
+                    if (File.Exists(ruta))
+                    {
+                        File.Delete(ruta);
+                        break; // ya encontró y borró
+                    }
+                }
+            }
+
             RefrescarInventario();
-            NotificarCambios(); // Avisa al form principal
+            NotificarCambios();
+
+            MessageBox.Show("Producto e imagen eliminados correctamente.");
+           
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -238,6 +265,11 @@ namespace Proyecto_PED_CAFETERIA.Forms
 
         frmModificarProducto modificar = null; //variable para controlar si ya existe el frm de modificar producto abierto
         public bool btn; // Agregar= True, Modificar= False sirve para verificar si el formulario de modificar producto se abrió para agregar un nuevo producto o para modificar uno existente
+
+        private void dgvInventario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
     
 }

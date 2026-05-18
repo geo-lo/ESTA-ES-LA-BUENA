@@ -90,40 +90,106 @@ namespace Proyecto_PED_CAFETERIA.Forms
             }
         }
 
+        //private void estiloDataGrid(DataGridView dataHistorial)
+        //{
+        //    dataHistorial.BackgroundColor = Color.White;
+        //    dataHistorial.BorderStyle = BorderStyle.None;
+        //    dataHistorial.EnableHeadersVisualStyles = false;
+        //    dataHistorial.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+        //    dataHistorial.RowHeadersVisible = false;
+
+        //    dataHistorial.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        //    dataHistorial.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+        //    dataHistorial.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        //    dataHistorial.MultiSelect = false;
+        //    dataHistorial.ReadOnly = true;
+
+        //    dataHistorial.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+        //    dataHistorial.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+        //    dataHistorial.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        //    dataHistorial.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+
+        //    dataHistorial.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(120, 72, 40);
+        //    dataHistorial.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+        //    dataHistorial.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11, FontStyle.Bold);
+        //    dataHistorial.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+        //    dataHistorial.ColumnHeadersHeight = 38;
+
+        //    dataHistorial.DefaultCellStyle.BackColor = Color.White;
+        //    dataHistorial.DefaultCellStyle.ForeColor = Color.FromArgb(70, 45, 30);
+        //    dataHistorial.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+        //    dataHistorial.DefaultCellStyle.SelectionBackColor = Color.FromArgb(230, 200, 170);
+        //    dataHistorial.DefaultCellStyle.SelectionForeColor = Color.FromArgb(70, 45, 30);
+
+        //    dataHistorial.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(252, 248, 243);
+        //    dataHistorial.GridColor = Color.FromArgb(230, 220, 210);
+        //    dataHistorial.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+        //}
         private void estiloDataGrid(DataGridView dataHistorial)
         {
-            dataHistorial.BackgroundColor = Color.White;
+            if (dataHistorial == null || dataHistorial.IsDisposed)
+                return;
+
+            foreach (DataGridViewColumn col in dataHistorial.Columns)
+            {
+                col.Frozen = false;
+            }
+            // ELIMINAR EL GRIS FEO Y CONFIGURAR FONDO
+            dataHistorial.BackgroundColor = Color.FromArgb(250, 244, 236);
             dataHistorial.BorderStyle = BorderStyle.None;
-            dataHistorial.EnableHeadersVisualStyles = false;
-            dataHistorial.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataHistorial.RowHeadersVisible = false;
+            dataHistorial.GridColor = Color.FromArgb(210, 190, 170);
 
-            dataHistorial.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataHistorial.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dataHistorial.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataHistorial.MultiSelect = false;
-            dataHistorial.ReadOnly = true;
-
+            // Ajustes de celdas
             dataHistorial.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             dataHistorial.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dataHistorial.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataHistorial.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
 
-            dataHistorial.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(120, 72, 40);
+            // Colores de filas
+            dataHistorial.RowsDefaultCellStyle.BackColor = Color.White;
+            dataHistorial.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(236, 228, 217);
+            dataHistorial.DefaultCellStyle.SelectionBackColor = Color.FromArgb(141, 102, 77);
+            dataHistorial.DefaultCellStyle.SelectionForeColor = Color.White;
+
+            // Encabezados (Header) estilo Café
+            dataHistorial.EnableHeadersVisualStyles = false;
+            dataHistorial.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataHistorial.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(92, 64, 51);
             dataHistorial.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dataHistorial.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11, FontStyle.Bold);
             dataHistorial.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataHistorial.ColumnHeadersHeight = 45;
+
+            dataHistorial.RowHeadersVisible = false;
+            dataHistorial.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataHistorial.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dataHistorial.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataHistorial.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            dataHistorial.BorderStyle = BorderStyle.None;
+            dataHistorial.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataHistorial.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(236, 228, 217);
+            dataHistorial.BackgroundColor = Color.FromArgb(230, 220, 205);
+            dataHistorial.GridColor = Color.FromArgb(210, 190, 170);
+
+            dataHistorial.DefaultCellStyle.SelectionBackColor = Color.FromArgb(141, 102, 77);
+            dataHistorial.DefaultCellStyle.SelectionForeColor = Color.White;
+
+            dataHistorial.EnableHeadersVisualStyles = false;
+            dataHistorial.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataHistorial.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(92, 64, 51);
+            dataHistorial.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dataHistorial.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            dataHistorial.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataHistorial.ColumnHeadersHeight = 38;
 
-            dataHistorial.DefaultCellStyle.BackColor = Color.White;
-            dataHistorial.DefaultCellStyle.ForeColor = Color.FromArgb(70, 45, 30);
             dataHistorial.DefaultCellStyle.Font = new Font("Segoe UI", 10);
-            dataHistorial.DefaultCellStyle.SelectionBackColor = Color.FromArgb(230, 200, 170);
-            dataHistorial.DefaultCellStyle.SelectionForeColor = Color.FromArgb(70, 45, 30);
+            dataHistorial.DefaultCellStyle.ForeColor = Color.FromArgb(70, 45, 30);
 
-            dataHistorial.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(252, 248, 243);
-            dataHistorial.GridColor = Color.FromArgb(230, 220, 210);
-            dataHistorial.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataHistorial.RowHeadersVisible = false;
+            dataHistorial.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataHistorial.MultiSelect = false;
+            dataHistorial.ReadOnly = true;
         }
 
         private void dgvPedidos_CellContentClick(object sender, DataGridViewCellEventArgs e)

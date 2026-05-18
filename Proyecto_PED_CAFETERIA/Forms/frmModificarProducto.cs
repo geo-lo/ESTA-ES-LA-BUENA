@@ -1,10 +1,12 @@
-using System;
 using Proyecto_PED_CAFETERIA.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,6 +15,7 @@ namespace Proyecto_PED_CAFETERIA.Forms
 {
     public partial class frmModificarProducto : Form
     {
+        string rutaImagenSeleccionada = "";
         public frmModificarProducto()
         {
             InitializeComponent();
@@ -116,7 +119,38 @@ namespace Proyecto_PED_CAFETERIA.Forms
         {
             this.Close();
         }
+        // Función para seleccionar una imagen y guardarla en la carpeta "Imagenes" con un nombre basado en el ID del producto
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog abrir = new OpenFileDialog();
+            abrir.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.bmp";
+            if (abrir.ShowDialog() == DialogResult.OK)
+            {
+              string Imagenes = Path.Combine(Application.StartupPath, "Imagenes");
+                if (!Directory.Exists(Imagenes))
+                    Directory.CreateDirectory(Imagenes);
 
-    
+                var archivosEnCarpeta = Directory.GetFiles(Imagenes);
+
+                int maxId = 0;
+                foreach (var archivo in archivosEnCarpeta)
+                {
+                    string nombre = Path.GetFileNameWithoutExtension(archivo);
+                    if (int.TryParse(nombre, out int id))
+                    {
+                        if (id > maxId)
+                            maxId = id;
+                    }
+                }
+                int nuevoId = maxId + 1;
+                string extension = Path.GetExtension(abrir.FileName);
+                string rutaDestino=Path.Combine(Imagenes, $"{nuevoId}{extension}");
+                File.Copy(abrir.FileName, rutaDestino);
+                rutaImagenSeleccionada = Path.Combine("Imagenes", $"{nuevoId}{extension}");
+
+                preview.Image = Image.FromFile(rutaDestino);
+                preview.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+        }
     }
 }

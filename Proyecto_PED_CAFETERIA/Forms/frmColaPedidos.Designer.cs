@@ -46,12 +46,12 @@
             this.C,
             this.p,
             this.t});
-            this.dgvPedidos.Location = new System.Drawing.Point(33, 71);
-            this.dgvPedidos.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvPedidos.Location = new System.Drawing.Point(25, 91);
+            this.dgvPedidos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPedidos.Name = "dgvPedidos";
             this.dgvPedidos.ReadOnly = true;
             this.dgvPedidos.RowHeadersWidth = 51;
-            this.dgvPedidos.Size = new System.Drawing.Size(948, 260);
+            this.dgvPedidos.Size = new System.Drawing.Size(670, 234);
             this.dgvPedidos.TabIndex = 0;
             this.dgvPedidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPedidos_CellContentClick);
             // 
@@ -87,10 +87,9 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.Red;
-            this.btnSalir.Location = new System.Drawing.Point(104, 357);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalir.Location = new System.Drawing.Point(25, 340);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(124, 47);
+            this.btnSalir.Size = new System.Drawing.Size(93, 38);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -101,10 +100,9 @@
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btn2.Location = new System.Drawing.Point(285, 357);
-            this.btn2.Margin = new System.Windows.Forms.Padding(4);
+            this.btn2.Location = new System.Drawing.Point(161, 340);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(124, 47);
+            this.btn2.Size = new System.Drawing.Size(93, 38);
             this.btn2.TabIndex = 2;
             this.btn2.Text = "Procesar";
             this.btn2.UseVisualStyleBackColor = true;
@@ -113,23 +111,23 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Location = new System.Drawing.Point(43, 29);
+            this.lblTitulo.Location = new System.Drawing.Point(32, 24);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(44, 16);
+            this.lblTitulo.Size = new System.Drawing.Size(35, 13);
             this.lblTitulo.TabIndex = 3;
             this.lblTitulo.Text = "label1";
             // 
             // frmColaPedidos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dgvPedidos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmColaPedidos";
             this.Text = "FrmVistaAdmin";
             this.Load += new System.EventHandler(this.frmColaPedidos_Load);
