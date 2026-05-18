@@ -173,5 +173,50 @@ namespace Proyecto_PED_CAFETERIA.Clases
             return tabla;
         }
 
+        //Obtenemos el stock de un producto
+        public int ObtenerStock(int idProducto)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = AbrirConexion();
+            comando.CommandText = "SELECT CantidadActual FROM Inventario WHERE IdProducto = @id";
+            comando.Parameters.AddWithValue("@id", idProducto);
+
+            int stock = Convert.ToInt32(comando.ExecuteScalar());
+            CerrarConexion();
+            return stock;
+        }
+
+        //Validamos el stock de un producto
+        public bool ValidarStock(ListaProductos productos)
+        {
+            Nodo_ListaProductos actual = productos.Primero;
+            while (actual != null)
+            {
+                Producto p = actual.ProductoGuardado;
+                int stockActual = ObtenerStock(p.Id);
+
+                if (p.Cantidad > stockActual)
+                {
+                    MessageBox.Show($"Stock insuficiente para '{p.NombreProducto}'. ", "Sin Stock", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
+                actual = actual.siguiente;
+            }
+            return true;
+        }
+        //Funcion para descontar un producto
+        public void DescontarProducto(int id, int cantidadVendida)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = AbrirConexion();
+            comando.CommandText = @"UPDATE Inventario 
+                            SET CantidadActual = CantidadActual - @cantidadVendida 
+                            WHERE IdProducto = @id";
+            comando.Parameters.AddWithValue("@id", id);
+            comando.Parameters.AddWithValue("@cantidadVendida", cantidadVendida);
+
+            comando.ExecuteNonQuery();
+            CerrarConexion();
+        }
     }
 }

@@ -147,13 +147,23 @@ namespace Proyecto_PED_CAFETERIA.Forms
                 return;
             }
 
-            // Guardar en BD
+            // Validar stock antes de procesar
             ConsultasDB repo = new ConsultasDB();
+            if (!repo.ValidarStock(pedido.ProductosSeleccionados))
+            {
+                // Devolver el pedido a la cola si no hay stock
+                ClaseGlobal.colaPedidos.Encolar(pedido);
+                MostrarPedidos();
+                return;
+            }
+
+            // Guardar en BD
             Nodo_ListaProductos actual = pedido.ProductosSeleccionados.Primero;
             while (actual != null)
             {
                 Producto p = actual.ProductoGuardado;
                 repo.RegistrarVenta(p.NombreProducto, p.Cantidad, (decimal)p.Precio, pedido.nombreCliente);
+                repo.DescontarProducto(p.Id, p.Cantidad);
                 actual = actual.siguiente;
             }
 
@@ -165,7 +175,6 @@ namespace Proyecto_PED_CAFETERIA.Forms
             MostrarPedidos();
 
             MessageBox.Show("Pedido procesado y guardado correctamente", "Éxito");
-
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
