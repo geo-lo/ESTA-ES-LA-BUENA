@@ -5,25 +5,29 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace Proyecto_PED_CAFETERIA.Forms
 {
     public partial class frmCarrito : Form
     {
+     
         public frmCarrito()
         {
             InitializeComponent();
         }
+       
 
         private void frmCarrito_Load(object sender, EventArgs e)
         {
             AplicarEstiloCarrito();
             MostrarCarrito();
+           
+
         }
 
         private void AplicarEstiloCarrito()

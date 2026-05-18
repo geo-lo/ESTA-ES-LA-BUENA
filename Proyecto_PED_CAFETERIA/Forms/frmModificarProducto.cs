@@ -122,6 +122,7 @@ namespace Proyecto_PED_CAFETERIA.Forms
         // Función para seleccionar una imagen y guardarla en la carpeta "Imagenes" con un nombre basado en el ID del producto
         private void button1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("SOLO IMAGENES EN PNG", "Seleccionar Imagen");
             OpenFileDialog abrir = new OpenFileDialog();
             abrir.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.bmp";
             if (abrir.ShowDialog() == DialogResult.OK)
