@@ -18,6 +18,7 @@ namespace Proyecto_PED_CAFETERIA.Forms
         string nombreProducto;
         double precioProducto;
         string DescripcionProducto;
+        public int idProducto;
 
         public frmCantidad()
         {
@@ -144,7 +145,7 @@ namespace Proyecto_PED_CAFETERIA.Forms
 
             int cantidad = (int)numericUpDown1.Value;
             // DESPUÉS
-            Producto prod = new Producto(nombreProducto, 0, cantidad, precioProducto, btnAceptar, "Categoria", DescripcionProducto);
+            Producto prod = new Producto(nombreProducto, idProducto, cantidad, precioProducto, btnAceptar, "Categoria", DescripcionProducto);
 
             ClaseGlobal.listaTemporal.AgregarProducto(prod);
 

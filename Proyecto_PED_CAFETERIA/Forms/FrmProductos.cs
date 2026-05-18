@@ -90,6 +90,7 @@ namespace Proyecto_PED_CAFETERIA.Forms
                         prod.Precio,
                         prod.Descripcion
                     );
+                    frm.idProducto = prod.Id;
                     estiloForm(frm);
                     frm.ShowDialog();
                 };
