@@ -140,16 +140,17 @@ namespace Proyecto_PED_CAFETERIA.Clases
         }
         
         //Consulta para guardar el historial de pedidos en la base de datos
-        public void RegistrarVenta(string nombre, int cantidad, decimal precio)
+        public void RegistrarVenta(string nombre, int cantidad, decimal precio, string cliente)
         {
             SqlCommand comando = new SqlCommand();
             comando.Connection = AbrirConexion();
             comando.CommandText = @"INSERT INTO HistoriaVentas
-                                    (NombreProducto, CantidadVendida, PrecioVenta)
-                                    VALUES ( @nombre, @cantidad, @precio)";
+                                    (NombreProducto, CantidadVendida, PrecioVenta, NombreCliente)
+                                    VALUES ( @nombre, @cantidad, @precio, @cliente)";
             comando.Parameters.AddWithValue("@nombre", nombre);
             comando.Parameters.AddWithValue("@cantidad", cantidad);
             comando.Parameters.AddWithValue("@precio", precio);
+            comando.Parameters.AddWithValue("@cliente", cliente);
 
             comando.ExecuteNonQuery();
             CerrarConexion();
@@ -162,7 +163,7 @@ namespace Proyecto_PED_CAFETERIA.Clases
             SqlCommand comando = new SqlCommand();
 
             comando.Connection = AbrirConexion();
-            comando.CommandText = "SELECT IdRegistro, NombreProducto, TotalVenta, FechaVenta FROM HistoriaVentas ORDER BY FechaVenta DESC";
+            comando.CommandText = "SELECT IdRegistro, NombreCliente, NombreProducto, CantidadVendida , TotalVenta, FechaVenta FROM HistoriaVentas ORDER BY FechaVenta DESC";
 
             SqlDataReader leer = comando.ExecuteReader();
             tabla.Load(leer);
