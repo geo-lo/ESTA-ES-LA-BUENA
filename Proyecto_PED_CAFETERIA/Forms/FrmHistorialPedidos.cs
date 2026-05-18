@@ -186,21 +186,41 @@ namespace Proyecto_PED_CAFETERIA.Forms
         private void dgvHistorial_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
         }
+       
+        
 
         // ESTE BOTON MANDA EL PEDIDO A PREPARADOS
         private void btnPreparar_Click(object sender, EventArgs e)
         {
+
             if (dgvHistorial.SelectedRows.Count == 0) return;
+
             string cliente = dgvHistorial.SelectedRows[0].Cells[0].Value.ToString();
-            MessageBox.Show("Pedido de " + cliente + " enviado a preparación.", "Preparación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            MessageBox.Show(
+                "Pedido de " + cliente + " enviado a preparación.",
+                "Preparación",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+
             if (dgvHistorial.Rows.Count == 0)
             {
                 MessageBox.Show("No hay pedidos en el historial.", "Aviso");
                 return;
             }
 
-            dgvHistorial.Rows.RemoveAt(0);
-            MessageBox.Show("Pedido preparado.", "Listo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            int index = dgvHistorial.SelectedRows[0].Index;
+
+            ClaseGlobal.historial.EliminarPorSeleccion(index);
+
+            MostrarPedidos();
+
+            MessageBox.Show(
+                "Pedido preparado.",
+                "Listo",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)

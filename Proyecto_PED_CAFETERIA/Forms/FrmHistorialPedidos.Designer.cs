@@ -82,7 +82,7 @@
             this.btnPreparar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPreparar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPreparar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnPreparar.Location = new System.Drawing.Point(95, 333);
+            this.btnPreparar.Location = new System.Drawing.Point(134, 333);
             this.btnPreparar.Name = "btnPreparar";
             this.btnPreparar.Size = new System.Drawing.Size(75, 23);
             this.btnPreparar.TabIndex = 1;
@@ -95,7 +95,7 @@
             this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrar.ForeColor = System.Drawing.Color.Red;
-            this.btnBorrar.Location = new System.Drawing.Point(206, 333);
+            this.btnBorrar.Location = new System.Drawing.Point(25, 333);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(75, 23);
             this.btnBorrar.TabIndex = 2;

@@ -27,6 +27,37 @@ namespace Proyecto_PED_CAFETERIA.Clases
                 Ultimo = nuevo;
             }
         }
+        public void EliminarPorSeleccion(int index)
+        {
+            if (Primero == null)
+                return;
+
+            NodoHistorial actual = Primero;
+            NodoHistorial anterior = null;
+
+            int contador = 0;
+
+            while (actual != null)
+            {
+                if (contador == index)
+                {
+                    if (anterior == null)
+                    {
+                        Primero = actual.siguiente;
+                    }
+                    else
+                    {
+                        anterior.siguiente = actual.siguiente;
+                    }
+
+                    return;
+                }
+
+                anterior = actual;
+                actual = actual.siguiente;
+                contador++;
+            }
+        }
     }
 
 }

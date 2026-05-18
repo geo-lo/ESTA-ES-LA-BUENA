@@ -36,12 +36,12 @@
             // dgvPreparados
             // 
             this.dgvPreparados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPreparados.Location = new System.Drawing.Point(146, 67);
-            this.dgvPreparados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvPreparados.Location = new System.Drawing.Point(11, 96);
+            this.dgvPreparados.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPreparados.Name = "dgvPreparados";
             this.dgvPreparados.RowHeadersWidth = 51;
             this.dgvPreparados.RowTemplate.Height = 24;
-            this.dgvPreparados.Size = new System.Drawing.Size(480, 240);
+            this.dgvPreparados.Size = new System.Drawing.Size(670, 234);
             this.dgvPreparados.TabIndex = 0;
             this.dgvPreparados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPreparados_CellContentClick);
             // 
@@ -59,7 +59,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(784, 411);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvPreparados);
             this.Name = "PedidosPreparados";
