@@ -22,5 +22,4 @@ se validara si se ha ingresado un nombre sino es el cazo saldra error, luego de 
 se mandara el Pedido a un DataGridView, click en boton "Pedidos" para ver el pedido, sus productos y el total a pagar
 click en boton "Preparar" para mandarlo al Admin para que se empiece a preparar el pedido
 
-//Todavia en proceso....
-Las demas Funciones siguen en Proceso, pero la implementacion de la TAD cola y Lista ya estan implementadas correctamente
+Cuando se confirme todo, se descontara la cantidad de productos seleccionados del Inventario
