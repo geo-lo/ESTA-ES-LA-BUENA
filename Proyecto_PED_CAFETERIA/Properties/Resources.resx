@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ESRTA ES LA BUENA)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ESRTA ES LA BUENA).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="papas fritas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\papas fritas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Presentación Historia del Café Ilustrado Café y Beige2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Presentación Historia del Café Ilustrado Café y Beige2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8_cafe_helado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8_cafe_helado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (22)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (22).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diseño sin título (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sandwich" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sandwich.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12_ensalada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12_ensalada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cupcake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cupcake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Carrito" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Carrito.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo empresa cafetería divertida ilustrada (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo empresa cafetería divertida ilustrada (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pantalla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pantalla.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="descarga (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (41)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (41).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="13_torta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\13_torta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diseño sin título (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo empresa cafetería divertida ilustrada (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo empresa cafetería divertida ilustrada (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cuaso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cuaso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5_burrito" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5_burrito.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="descarga1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diseño sin título (10) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título (10) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="11_palomitas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11_palomitas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo empresa cafetería divertida ilustrada (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo empresa cafetería divertida ilustrada (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chocolate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_Almuerzo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_Almuerzo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="descarga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo empresa cafetería divertida ilustrada (2)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo empresa cafetería divertida ilustrada (2)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="descarga3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (48)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (48)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (18)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (18).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (24)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (24).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="16_pasta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16_pasta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (50)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (50).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (44)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (44).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mugman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mugman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diseño sin título (7) (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título (7) (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dylce aroma cafe iniciooo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dylce aroma cafe iniciooo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (46)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (46).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (27)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (27).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (47)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (47).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9_pepsi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9_pepsi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3_taco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3_taco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pan2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pan1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (8).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4_sopa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4_sopa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dona" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dona.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (9)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (9).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="16_leche" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16_leche.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diseño sin título (7) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título (7) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diseño sin título (13) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título (13) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mugman (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mugman (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (31)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (31).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Presentación Historia del Café Ilustrado Café y Beige" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Presentación Historia del Café Ilustrado Café y Beige.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="descarga2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (34)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (34).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (40)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (40).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (20)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (20).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (12)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (12).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (16)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (16).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (48)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (48).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diseño sin título" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (39)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (39).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (25)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (25).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (38)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (38).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1cf7e519723171.Y3JvcCw0MDUwMCwzMTcwMCwwLDA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1cf7e519723171.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cuphead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cuphead.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (32)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (32).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diseño sin título (9) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título (9) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pan1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Presentación Historia del Café Ilustrado Café y Beige1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Presentación Historia del Café Ilustrado Café y Beige1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TipoUsuario1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TipoUsuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (10)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (10).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3_coca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3_coca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diseño sin título (5) (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título (5) (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diseño sin título (15)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título (15).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="10_elote" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\10_elote.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="waffles2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\waffles2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TipoUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TipoUsuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4a4981a3df8a41942b886811bf1f2f3a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4a4981a3df8a41942b886811bf1f2f3a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sushi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sushi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="14_cerveza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\14_cerveza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (11)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (11).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="15_desayuno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\15_desayuno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="descarga (1)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="galletas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\galletas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diseño sin título (6) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título (6) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (42)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (42).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diseño sin título (6) (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título (6) (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_hamburguesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_hamburguesa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (43)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (43).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pastel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pastel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (49)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (49).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jugo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jugo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diseño sin título (12) (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título (12) (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (35)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (35).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7_cafe_caliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7_cafe_caliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pancaques" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pancaques.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (17)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (17).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="11_sprite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11_sprite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TipoUsuario2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TipoUsuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9_quesadilla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9_quesadilla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dylce aroma cafe iniciooo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dylce aroma cafe iniciooo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (33)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (33).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (37)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (37).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diseño sin título (11) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título (11) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8_pollo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8_pollo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (36)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (36).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="descarga (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5_limonada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5_limonada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (15)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (15).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (14)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (14).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hotdog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hotdog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4_Te" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4_Te.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="helado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\helado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="14_tamales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\14_tamales.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12_monster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12_monster.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jugo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jugo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cuphead1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cuphead.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7_concha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7_concha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (21)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (21).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo empresa cafetería divertida ilustrada (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo empresa cafetería divertida ilustrada (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (19)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (19).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6_nachos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6_nachos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ESRTA ES LA BUENA)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ESRTA ES LA BUENA)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Presentación Historia del Café Ilustrado Café y Beige3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Presentación Historia del Café Ilustrado Café y Beige3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (30)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (30).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="13_yogurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\13_yogurt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (28)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (28).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (29)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (29).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (13)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (13).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="15_vino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\15_vino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jugo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jugo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (23)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (23).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="10_fanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\10_fanta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6_batidofresa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6_batidofresa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documento A4 Catálogo Supermercado Moderno Blanco (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento A4 Catálogo Supermercado Moderno Blanco (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diseño sin título1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

@@ -1,0 +1,10 @@
+[33mcd66358[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5 from geo-lo/Christopher
+[33m2df5634[m[33m ([m[1;31morigin/Christopher[m[33m)[m Merge branch 'master' into Christopher
+[33m42a58a2[m Se asocio el apartado de botones dinamicos con la database
+[33m25ab503[m Database version 2.0
+[33m11c5920[m Merge pull request #4 from geo-lo/Geo
+[33m1b590fa[m[33m ([m[1;31morigin/Geo[m[33m)[m SE AGREGARON FOTOS PARA VER COMO QUEDAN EN LOS BOTONES Y SE BORRARON FOTOS INNECESARIAS
+[33mf878743[m Merge pull request #3 from geo-lo/Geo
+[33m43380dd[m Se crearon desde 0 los botones con el metodo CrearBotonProducto
+[33m909ead0[m Merge pull request #2 from geo-lo/Christopher
+[33mae2ef84[m Se agrego frmModificarProducto y se solucionaron bugs de la parte de inventario

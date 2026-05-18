@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3EB4B996-6537-4089-B366-D390C4DA1529}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proyecto_PED_CAFETERIA</RootNamespace>
+    <AssemblyName>Proyecto_PED_CAFETERIA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\ClaseGlobal.cs" />
+    <Compile Include="Clases\ConexionDB.cs" />
+    <Compile Include="Clases\ConsultasDB.cs" />
+    <Compile Include="Clases\HistorialPedidos.cs" />
+    <Compile Include="Clases\NodoHistorial.cs" />
+    <Compile Include="Clases\ColaPedidos.cs" />
+    <Compile Include="Clases\ListaProductos.cs" />
+    <Compile Include="Clases\Nodo_ColaPedidos.cs" />
+    <Compile Include="Clases\Nodo_ListaProductos.cs" />
+    <Compile Include="Clases\Pedido.cs" />
+    <Compile Include="Clases\Producto.cs" />
+    <Compile Include="Clases\SesionActual.cs" />
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Program.cs" />
+    <Compile Include="Forms\frmCantidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCantidad.Designer.cs">
+      <DependentUpon>frmCantidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCarrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCarrito.Designer.cs">
+      <DependentUpon>frmCarrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmHistorialPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHistorialPedidos.Designer.cs">
+      <DependentUpon>FrmHistorialPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmModificarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmModificarProducto.Designer.cs">
+      <DependentUpon>frmModificarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmProductos.Designer.cs">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmColaPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmColaPedidos.Designer.cs">
+      <DependentUpon>frmColaPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSalida.Designer.cs">
+      <DependentUpon>frmSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmVistaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmVistaUsuario.Designer.cs">
+      <DependentUpon>FrmVistaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PedidosPreparados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PedidosPreparados.Designer.cs">
+      <DependentUpon>PedidosPreparados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCantidad.resx">
+      <DependentUpon>frmCantidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCarrito.resx">
+      <DependentUpon>frmCarrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmHistorialPedidos.resx">
+      <DependentUpon>FrmHistorialPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmModificarProducto.resx">
+      <DependentUpon>frmModificarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmProductos.resx">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmColaPedidos.resx">
+      <DependentUpon>frmColaPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSalida.resx">
+      <DependentUpon>frmSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmVistaUsuario.resx">
+      <DependentUpon>FrmVistaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PedidosPreparados.resx">
+      <DependentUpon>PedidosPreparados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESRTA ES LA BUENA%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jugo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papas fritas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pastel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\galletas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sandwich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pancaques.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cupcake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotdog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chocolate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuaso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waffles2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jugo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_coca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_Te.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5_limonada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6_batidofresa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7_cafe_caliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8_cafe_helado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9_pepsi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10_fanta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11_sprite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12_monster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13_yogurt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14_cerveza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15_vino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16_leche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pan1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mugman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mugman %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cuphead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cuphead.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pantalla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESRTA ES LA BUENA%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TipoUsuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sushi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_Almuerzo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_hamburguesa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_taco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_sopa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5_burrito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6_nachos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7_concha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8_pollo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9_quesadilla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10_elote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11_palomitas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12_ensalada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13_torta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14_tamales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15_desayuno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16_pasta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carrito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jugo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dylce aroma cafe iniciooo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo empresa cafetería divertida ilustrada %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Presentación Historia del Café Ilustrado Café y Beige.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2814%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2815%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2816%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2817%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2818%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2819%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2829%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2828%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2827%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2825%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2824%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2823%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2822%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2821%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2820%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2830%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2831%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Presentación Historia del Café Ilustrado Café y Beige1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Presentación Historia del Café Ilustrado Café y Beige2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Presentación Historia del Café Ilustrado Café y Beige3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2837%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2836%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2835%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2834%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2833%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2832%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2840%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2839%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2838%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2848%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2846%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2844%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2843%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2842%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2841%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2848%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2847%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2849%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documento A4 Catálogo Supermercado Moderno Blanco %2850%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título %2815%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título %285%29 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título %286%29 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título %286%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título %287%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título %287%29 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título %289%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título %2810%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título %2811%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título %2812%29 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título %2813%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4a4981a3df8a41942b886811bf1f2f3a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1cf7e519723171.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
