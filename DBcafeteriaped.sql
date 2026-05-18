@@ -28,7 +28,7 @@ PrecioVenta DECIMAL(10,2) NOT NULL,
 TotalVenta AS (CantidadVendida * PrecioVenta),
 FechaVenta DATETIME DEFAULT GETDATE(),
 
-CONSTRAINT FK_Inventario_Ventas FOREIGN KEY (IdProducto)REFERENCES Inventario(IdProducto)
+CONSTRAINT FK_Inventario_Ventas FOREIGN KEY (IdProducto)REFERENCES Inventario(IdProducto))
 
 
 GO
@@ -51,3 +51,5 @@ GO
 
 ALTER TABLE Inventario ADD Categoria VARCHAR(50) NULL;
 ALTER TABLE Inventario ADD Descripcion VARCHAR(255) NULL;
+ALTER TABLE HistoriaVentas ADD NombreCliente VARCHAR(100) NULL;
+GO
