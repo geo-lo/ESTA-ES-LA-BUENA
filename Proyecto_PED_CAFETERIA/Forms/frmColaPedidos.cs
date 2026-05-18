@@ -153,7 +153,7 @@ namespace Proyecto_PED_CAFETERIA.Forms
             while (actual != null)
             {
                 Producto p = actual.ProductoGuardado;
-                repo.RegistrarVenta(p.NombreProducto, p.Cantidad, (decimal)p.Precio);
+                repo.RegistrarVenta(p.NombreProducto, p.Cantidad, (decimal)p.Precio, pedido.nombreCliente);
                 actual = actual.siguiente;
             }
 
